@@ -12,5 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('wip');
+});
+
+Route::get('/tasks', function () {
+    return view('tasks');
+});
+
+Route::get('/actionitems', function () {
+    return view('actionitems');
+});
+
+Route::get('/deliverables', function () {
+    return view('deliverables');
+});
+
+Route::get('/issues', function () {
+    return view('issues');
 });
