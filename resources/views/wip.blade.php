@@ -9,25 +9,31 @@
 </head>
 <body>
 <section class="section">
-    <div class="columns">
-        <div class="column is-one-quarter">
-            <div class="box">
-                <ul class="menu-list">
-                    <li><a href="/tasks">Tasks</a></li>
-                    <li><a href="/actionitems">Action Items</a></li>
-                    <li><a href="/deliverables">Deliverables</a></li>
-                    <li><a href="/issues">Issues</a></li>
-                </ul>
+    <div id="app">
+        <div class="columns">
+            <div class="column is-one-quarter">
+                <div class="box">
+                    <ul class="menu-list">
+                        <li><a href="/tasks">Tasks</a></li>
+                        <li><a href="/actionitems">Action Items</a></li>
+                        <li><a href="/deliverables">Deliverables</a></li>
+                        <li><a href="/issues">Issues</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="column">
-            <div class="box">
-                <h1>
-                    This Web Application is a Work in Progress!
-                </h1>
+            <div class="column">
+                <div class="box">
+                    <h1>
+                        This Web Application is a Work in Progress!
+                    </h1>
+                </div>
+                <div class="box">
+                    <example-component></example-component>
+                </div>
             </div>
         </div>
     </div>
 </section>
 </body>
+<script src="{{ asset('js/app.js') }}"></script>
 </html>
