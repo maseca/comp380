@@ -12,7 +12,7 @@
         <div class="columns is-gapless">
             <div class="column is-narrow">
                 <section class="section">
-                    <side-nav></side-nav>
+                    <side-nav :active-index=0></side-nav>
                 </section>
             </div>
             <div class="column">

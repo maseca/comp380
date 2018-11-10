@@ -1,25 +1,34 @@
 <template>
     <ul class="menu-list">
-        <li><a href="/tasks">Tasks</a></li>
-        <li><a href="/actionitems">Action Items</a></li>
-        <li><a href="/deliverables">Deliverables</a></li>
-        <li><a href="/issues">Issues</a></li>
+        <nav-item
+                v-for="item in items"
+                :data="item"
+                :key=item.id
+                :activeIndex=activeIndex
+        ></nav-item>
     </ul>
 </template>
 
 <script>
+    import NavItem from './NavItem.vue'
     export default {
         name: "side-nav",
 
-        mounted() {
-            console.log('Component mounted.')
+        components: {
+            NavItem
         },
+
+        props: ['activeIndex'],
 
         data: function () {
             return {
-                bingus: 0
+                items: [
+                    { id: 0, link: "/tasks", text: "Tasks"},
+                    { id: 1, link: "/actionitems", text: "Action Items"},
+                    { id: 2, link: "/deliverables", text: "Deliverables"},
+                    { id: 3, link: "/issues", text: "Issues"},
+                ]
             }
-        }
-
+        },
     }
 </script>
