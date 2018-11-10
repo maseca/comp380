@@ -17,7 +17,7 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-Vue.component('side-nav', require('./components/SideNav.vue'));
+Vue.component('content-frame', require('./components/ContentFrame.vue'));
 
 // const files = require.context('./', true, /\.vue$/i)
 

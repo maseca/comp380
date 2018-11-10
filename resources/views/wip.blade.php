@@ -9,29 +9,11 @@
 </head>
 <body>
     <div id="app">
-        <div class="columns is-gapless">
-            <div class="column is-narrow">
-                <section class="section">
-                    <side-nav :active-index=0></side-nav>
-                </section>
+        <content-frame title="WIP" :my-index=0>
+            <div class="box">
+                <h2 class="subtitle">Content?</h2>
             </div>
-            <div class="column">
-                <section class="hero is-primary is-bold">
-                    <div class="hero-body">
-                        <div class="container has-text-centered">
-                            <h1 class="title">
-                                WIP
-                            </h1>
-                        </div>
-                    </div>
-                </section>
-                <section class="section has-background-light">
-                    <div class="box">
-                        <h2 class="subtitle">Content?</h2>
-                    </div>
-                </section>
-            </div>
-        </div>
+        </content-frame>
     </div>
 </body>
 <script src="{{ asset('js/app.js') }}"></script>

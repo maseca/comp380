@@ -1,16 +1,16 @@
 <template>
-    <li><a :href=data.link :class=active>{{ data.text }}</a></li>
+    <li><a :href=info.link :class=active>{{ info.text }}</a></li>
 </template>
 
 <script>
     export default {
         name: "nav-item",
 
-        props: ['data', 'activeIndex'],
+        props: ['info', 'activeIndex'],
 
         computed: {
             active: function () {
-                return this.data.id == this.activeIndex ? "is-active" : "";
+                return this.info.id == this.activeIndex ? "is-active" : "";
             }
         }
     }

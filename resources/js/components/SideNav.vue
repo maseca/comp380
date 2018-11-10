@@ -1,12 +1,14 @@
 <template>
-    <ul class="menu-list">
-        <nav-item
-                v-for="item in items"
-                :data="item"
-                :key=item.id
-                :activeIndex=activeIndex
-        ></nav-item>
-    </ul>
+    <div class="column is-narrow">
+        <ul class="menu-list">
+            <nav-item
+                    v-for="item in items"
+                    :info="item"
+                    :key=item.id
+                    :activeIndex=activeIndex
+            ></nav-item>
+        </ul>
+    </div>
 </template>
 
 <script>

@@ -8,31 +8,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
-<div id="app">
-    <div class="columns is-gapless">
-        <div class="column is-narrow">
-            <section class="section">
-                <side-nav :active-index=3></side-nav>
-            </section>
-        </div>
-        <div class="column">
-            <section class="hero is-primary is-bold">
-                <div class="hero-body">
-                    <div class="container has-text-centered">
-                        <h1 class="title">
-                            Issues
-                        </h1>
-                    </div>
-                </div>
-            </section>
-            <section class="section has-background-light">
-                <div class="box">
-                    <h2 class="subtitle">Content?</h2>
-                </div>
-            </section>
-        </div>
+    <div id="app">
+        <content-frame title="Issues" :my-index=3>
+
+        </content-frame>
     </div>
-</div>
 </body>
 <script src="{{ asset('js/app.js') }}"></script>
 </html>
