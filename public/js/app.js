@@ -13907,7 +13907,7 @@ window.Vue = __webpack_require__(36);
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-Vue.component('example-component', __webpack_require__(39));
+Vue.component('side-nav', __webpack_require__(39));
 
 // const files = require.context('./', true, /\.vue$/i)
 
@@ -47222,7 +47222,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/ExampleComponent.vue"
+Component.options.__file = "resources/js/components/SideNav.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47231,9 +47231,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-299e239e", Component.options)
+    hotAPI.createRecord("data-v-c584389e", Component.options)
   } else {
-    hotAPI.reload("data-v-299e239e", Component.options)
+    hotAPI.reload("data-v-c584389e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47367,18 +47367,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    name: "side-nav",
+
     mounted: function mounted() {
         console.log('Component mounted.');
+    },
+
+
+    data: function data() {
+        return {
+            bingus: 0
+        };
     }
+
 });
 
 /***/ }),
@@ -47396,22 +47399,18 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card card-default" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component. YEEEEEEE HAWWWWWW\n                "
-              )
-            ])
-          ])
-        ])
-      ])
+    return _c("ul", { staticClass: "menu-list" }, [
+      _c("li", [_c("a", { attrs: { href: "/tasks" } }, [_vm._v("Tasks")])]),
+      _vm._v(" "),
+      _c("li", [
+        _c("a", { attrs: { href: "/actionitems" } }, [_vm._v("Action Items")])
+      ]),
+      _vm._v(" "),
+      _c("li", [
+        _c("a", { attrs: { href: "/deliverables" } }, [_vm._v("Deliverables")])
+      ]),
+      _vm._v(" "),
+      _c("li", [_c("a", { attrs: { href: "/issues" } }, [_vm._v("Issues")])])
     ])
   }
 ]
@@ -47420,7 +47419,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-299e239e", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-c584389e", module.exports)
   }
 }
 
