@@ -3,7 +3,7 @@
         <div class="modal-background"></div>
         <div class="modal-content">
             <div class="box">
-                HI MOM
+                <slot></slot>
             </div>
         </div>
         <button

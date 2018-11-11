@@ -19,6 +19,7 @@ window.Vue = require('vue');
 
 Vue.component('content-frame', require('./components/ContentFrame.vue'));
 Vue.component('task-content', require('./components/TaskContent.vue'));
+Vue.component('confirm-cancel-buttons', require('./components/ConfirmCancelButtons.vue'));
 Vue.component('pmmodal', require('./components/PMModal.vue'));
 
 // const files = require.context('./', true, /\.vue$/i)
