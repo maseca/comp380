@@ -48347,7 +48347,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "container" },
+    { staticClass: "columns" },
     [
       _c(
         "pmmodal",
@@ -48372,10 +48372,10 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "columns" }, [
+      _c("div", { staticClass: "column" }, [
         _c(
           "div",
-          { staticClass: "column" },
+          { staticClass: "container" },
           [
             _vm._m(0),
             _vm._v(" "),
@@ -48388,19 +48388,19 @@ var render = function() {
             })
           ],
           2
-        ),
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column" }, [
+        _c("section", { staticClass: "section" }, [
+          _c("a", { staticClass: "button", on: { click: _vm.newModal } }, [
+            _vm._v("Create New Task")
+          ])
+        ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column is-narrow" }, [
-          _c("section", { staticClass: "section" }, [
-            _c("a", { staticClass: "button", on: { click: _vm.newModal } }, [
-              _vm._v("Create New Task")
-            ])
-          ]),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _vm._m(2)
-        ])
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2)
       ])
     ],
     1

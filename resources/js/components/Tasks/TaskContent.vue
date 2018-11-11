@@ -1,22 +1,23 @@
 <template>
-    <div class="container">
-        <pmmodal :active=modalActive
-                 @deactivated="modalActive = false">
-            <task-modal :info="modalInfo"
-                        @deactivated="modalActive = false"></task-modal>
-        </pmmodal>
         <div class="columns">
+            <pmmodal :active=modalActive
+                     @deactivated="modalActive = false">
+                <task-modal :info="modalInfo"
+                            @deactivated="modalActive = false"></task-modal>
+            </pmmodal>
             <div class="column">
-                <div class="box">
-                    <h2 class="subtitle">Gantt Chart Goes Here</h2>
+                <div class="container">
+                    <div class="box">
+                        <h2 class="subtitle">Gantt Chart Goes Here</h2>
+                    </div>
+                    <task-card v-for="card in cards"
+                               :info=card
+                               :key=card.id
+                               @edit=editModal
+                    ></task-card>
                 </div>
-                <task-card v-for="card in cards"
-                           :info=card
-                           :key=card.id
-                           @edit=editModal
-                ></task-card>
             </div>
-            <div class="column is-narrow">
+            <div class="column">
                 <section class="section">
                     <a class="button" @click=newModal>Create New Task</a>
                 </section>
@@ -28,7 +29,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </template>
 
 <script>
