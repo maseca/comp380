@@ -2,6 +2,10 @@
     <div class="columns">
         <div class="column">
             <ul>
+                <li> <b>Title:</b>
+                    <input class="input"
+                           type="text"
+                           :placeholder=info.title /> </li>
                 <li> <b>Exp. Start Date:</b>
                     <input class="input"
                            type="text"
@@ -55,7 +59,9 @@
                            type="text"
                            :placeholder=info.description /> </li>
             </ul>
-            <confirm-cancel-buttons @deactivated="$emit('deactivated')"></confirm-cancel-buttons>
+            <section class="section">
+                <confirm-cancel-buttons @deactivated="$emit('deactivated')"></confirm-cancel-buttons>
+            </section>
         </div>
     </div>
 </template>

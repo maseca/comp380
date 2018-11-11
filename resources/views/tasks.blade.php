@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <content-frame title="Tasks" :my-index=0>
-
+            <task-content></task-content>
         </content-frame>
     </div>
 </body>

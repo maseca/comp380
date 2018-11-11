@@ -31,7 +31,7 @@
                 </div>
             </div>
             <footer class="card-footer">
-                <a class="card-footer-item">Edit</a>
+                <a class="card-footer-item" @click="$emit('edit', info)">Edit</a>
                 <a class="card-footer-item" @click="hidden = true">Delete</a>
             </footer>
         </div>

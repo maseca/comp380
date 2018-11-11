@@ -1,28 +1,25 @@
 <template>
     <div class="container">
-        <pmmodal
-                :active=modalActive
-                :info="modalInfo"
-                @deactivated="modalActive = false">
-            <task-modal
-                    @deactivated="modalActive = false"
-            ></task-modal>
+        <pmmodal :active=modalActive
+                 @deactivated="modalActive = false">
+            <task-modal :info="modalInfo"
+                        @deactivated="modalActive = false"></task-modal>
         </pmmodal>
         <div class="columns">
             <div class="column">
                 <div class="box">
                     <h2 class="subtitle">Gantt Chart Goes Here</h2>
                 </div>
-                <task-card
-                    v-for="card in cards"
-                    :info=card
-                    :key=card.id
+                <task-card v-for="card in cards"
+                           :info=card
+                           :key=card.id
+                           @edit=editModal
                 ></task-card>
             </div>
             <div class="column is-narrow">
-                <div class="box">
+                <section class="section">
                     <a class="button" @click=newModal>Create New Task</a>
-                </div>
+                </section>
                 <div class="box">
                     <h2 class="subtitle">Search Bar Goes Here</h2>
                 </div>
@@ -48,7 +45,13 @@
         data: function () {
             return {
                 modalActive: false,
-                modalInfo: null,
+                modalInfo: {
+                    id: 0, title: 'My Task 1', resource: 'My Resource', expStart: '2/24/2014',
+                    expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
+                    preTasks: ['Task 1', 'Task 2', 'Task 3'], sucTasks: ['Task 1', 'Task 2', 'Task 3'],
+                    expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
+                    issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
+                },
                 cards: [
                     {
                         id: 0, title: 'My Task 1', resource: 'My Resource', expStart: '2/24/2014',
@@ -77,11 +80,20 @@
 
         methods: {
             newModal() {
+                this.modalInfo = {
+                    id: 0, title: 'My Task 1', resource: 'My Resource', expStart: '2/24/2014',
+                    expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
+                    preTasks: ['Task 1', 'Task 2', 'Task 3'], sucTasks: ['Task 1', 'Task 2', 'Task 3'],
+                    expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
+                    issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
+                };
+
                 this.modalActive = true;
             },
 
-            setModalInfo(info) {
+            editModal(info) {
                 this.modalInfo = info;
+                this.modalActive = true;
             }
         }
     }

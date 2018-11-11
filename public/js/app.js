@@ -47334,7 +47334,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/ContentFrame.vue"
+Component.options.__file = "resources/js/components/Framing/ContentFrame.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47343,9 +47343,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0995825f", Component.options)
+    hotAPI.createRecord("data-v-179a4ff8", Component.options)
   } else {
-    hotAPI.reload("data-v-0995825f", Component.options)
+    hotAPI.reload("data-v-179a4ff8", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47421,7 +47421,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/SideNav.vue"
+Component.options.__file = "resources/js/components/Framing/SideNav.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47430,9 +47430,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-c584389e", Component.options)
+    hotAPI.createRecord("data-v-3790daec", Component.options)
   } else {
-    hotAPI.reload("data-v-c584389e", Component.options)
+    hotAPI.reload("data-v-3790daec", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47507,7 +47507,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/NavItem.vue"
+Component.options.__file = "resources/js/components/Framing/NavItem.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47516,9 +47516,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-032b1d3b", Component.options)
+    hotAPI.createRecord("data-v-c503d714", Component.options)
   } else {
-    hotAPI.reload("data-v-032b1d3b", Component.options)
+    hotAPI.reload("data-v-c503d714", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47571,7 +47571,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-032b1d3b", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-c503d714", module.exports)
   }
 }
 
@@ -47602,7 +47602,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-c584389e", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-3790daec", module.exports)
   }
 }
 
@@ -47652,7 +47652,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-0995825f", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-179a4ff8", module.exports)
   }
 }
 
@@ -47682,7 +47682,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/TaskContent.vue"
+Component.options.__file = "resources/js/components/Tasks/TaskContent.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47691,9 +47691,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4136efce", Component.options)
+    hotAPI.createRecord("data-v-491c6db8", Component.options)
   } else {
-    hotAPI.reload("data-v-4136efce", Component.options)
+    hotAPI.reload("data-v-491c6db8", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47746,9 +47746,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 
 
@@ -47763,7 +47760,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             modalActive: false,
-            modalInfo: null,
+            modalInfo: {
+                id: 0, title: 'My Task 1', resource: 'My Resource', expStart: '2/24/2014',
+                expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
+                preTasks: ['Task 1', 'Task 2', 'Task 3'], sucTasks: ['Task 1', 'Task 2', 'Task 3'],
+                expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
+                issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
+            },
             cards: [{
                 id: 0, title: 'My Task 1', resource: 'My Resource', expStart: '2/24/2014',
                 expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
@@ -47788,10 +47791,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
         newModal: function newModal() {
+            this.modalInfo = {
+                id: 0, title: 'My Task 1', resource: 'My Resource', expStart: '2/24/2014',
+                expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
+                preTasks: ['Task 1', 'Task 2', 'Task 3'], sucTasks: ['Task 1', 'Task 2', 'Task 3'],
+                expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
+                issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
+            };
+
             this.modalActive = true;
         },
-        setModalInfo: function setModalInfo(info) {
+        editModal: function editModal(info) {
             this.modalInfo = info;
+            this.modalActive = true;
         }
     }
 });
@@ -47822,7 +47834,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/TaskModal.vue"
+Component.options.__file = "resources/js/components/Tasks/TaskModal.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47831,9 +47843,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-219ed64d", Component.options)
+    hotAPI.createRecord("data-v-4dfcd0a8", Component.options)
   } else {
-    hotAPI.reload("data-v-219ed64d", Component.options)
+    hotAPI.reload("data-v-4dfcd0a8", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47849,6 +47861,56 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -47883,52 +47945,154 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "columns" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "column" },
-      [
-        _vm._m(1),
+    _c("div", { staticClass: "column" }, [
+      _c("ul", [
+        _c("li", [
+          _c("b", [_vm._v("Title:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.title }
+          })
+        ]),
         _vm._v(" "),
-        _c("confirm-cancel-buttons", {
-          on: {
-            deactivated: function($event) {
-              _vm.$emit("deactivated")
+        _c("li", [
+          _c("b", [_vm._v("Exp. Start Date:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.expStart }
+          })
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("b", [_vm._v("Exp. End Date:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.expEnd }
+          })
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("b", [_vm._v("Actual Start Date:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.actStart }
+          })
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("b", [_vm._v("Actual End Date:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.actEnd }
+          })
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("b", [_vm._v("Predecessor Tasks:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.preTasks }
+          })
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("b", [_vm._v("Successor Tasks:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.sucTasks }
+          })
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "column" }, [
+      _c("ul", [
+        _c("li", [
+          _c("b", [_vm._v("Exp. Effort:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.expEffort }
+          })
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("b", [_vm._v("Completed Effort:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.comEffort }
+          })
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("b", [_vm._v("Actual Effort:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.actEffort }
+          })
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("b", [_vm._v("Issues:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.issues }
+          })
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("b", [_vm._v("Resource:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.resource }
+          })
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("b", [_vm._v("Description:")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "input",
+            attrs: { type: "text", placeholder: _vm.info.description }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "section",
+        { staticClass: "section" },
+        [
+          _c("confirm-cancel-buttons", {
+            on: {
+              deactivated: function($event) {
+                _vm.$emit("deactivated")
+              }
             }
-          }
-        })
-      ],
-      1
-    )
+          })
+        ],
+        1
+      )
+    ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "column" }, [
-      _c("div", { staticClass: "box" }, [
-        _c("h2", { staticClass: "subtitle" }, [_vm._v("Content?")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "box" }, [
-      _c("h2", { staticClass: "subtitle" }, [_vm._v("Content?")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-219ed64d", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-4dfcd0a8", module.exports)
   }
 }
 
@@ -47958,7 +48122,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/TaskCard.vue"
+Component.options.__file = "resources/js/components/Tasks/TaskCard.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47967,9 +48131,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-8b6a65c0", Component.options)
+    hotAPI.createRecord("data-v-d22a383e", Component.options)
   } else {
-    hotAPI.reload("data-v-8b6a65c0", Component.options)
+    hotAPI.reload("data-v-d22a383e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48131,7 +48295,18 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("footer", { staticClass: "card-footer" }, [
-            _c("a", { staticClass: "card-footer-item" }, [_vm._v("Edit")]),
+            _c(
+              "a",
+              {
+                staticClass: "card-footer-item",
+                on: {
+                  click: function($event) {
+                    _vm.$emit("edit", _vm.info)
+                  }
+                }
+              },
+              [_vm._v("Edit")]
+            ),
             _vm._v(" "),
             _c(
               "a",
@@ -48158,7 +48333,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-8b6a65c0", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-d22a383e", module.exports)
   }
 }
 
@@ -48177,7 +48352,7 @@ var render = function() {
       _c(
         "pmmodal",
         {
-          attrs: { active: _vm.modalActive, info: _vm.modalInfo },
+          attrs: { active: _vm.modalActive },
           on: {
             deactivated: function($event) {
               _vm.modalActive = false
@@ -48186,6 +48361,7 @@ var render = function() {
         },
         [
           _c("task-modal", {
+            attrs: { info: _vm.modalInfo },
             on: {
               deactivated: function($event) {
                 _vm.modalActive = false
@@ -48204,14 +48380,18 @@ var render = function() {
             _vm._m(0),
             _vm._v(" "),
             _vm._l(_vm.cards, function(card) {
-              return _c("task-card", { key: card.id, attrs: { info: card } })
+              return _c("task-card", {
+                key: card.id,
+                attrs: { info: card },
+                on: { edit: _vm.editModal }
+              })
             })
           ],
           2
         ),
         _vm._v(" "),
         _c("div", { staticClass: "column is-narrow" }, [
-          _c("div", { staticClass: "box" }, [
+          _c("section", { staticClass: "section" }, [
             _c("a", { staticClass: "button", on: { click: _vm.newModal } }, [
               _vm._v("Create New Task")
             ])
@@ -48257,7 +48437,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-4136efce", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-491c6db8", module.exports)
   }
 }
 
@@ -48287,7 +48467,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/ConfirmCancelButtons.vue"
+Component.options.__file = "resources/js/components/Other/ConfirmCancelButtons.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -48296,9 +48476,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-128cc232", Component.options)
+    hotAPI.createRecord("data-v-6d575231", Component.options)
   } else {
-    hotAPI.reload("data-v-128cc232", Component.options)
+    hotAPI.reload("data-v-6d575231", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48375,7 +48555,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-128cc232", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-6d575231", module.exports)
   }
 }
 
@@ -48405,7 +48585,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/PMModal.vue"
+Component.options.__file = "resources/js/components/Other/PMModal.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -48414,9 +48594,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6e696035", Component.options)
+    hotAPI.createRecord("data-v-5859bdd6", Component.options)
   } else {
-    hotAPI.reload("data-v-6e696035", Component.options)
+    hotAPI.reload("data-v-5859bdd6", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48493,7 +48673,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6e696035", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-5859bdd6", module.exports)
   }
 }
 

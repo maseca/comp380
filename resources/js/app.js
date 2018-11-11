@@ -17,10 +17,10 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-Vue.component('content-frame', require('./components/ContentFrame.vue'));
-Vue.component('task-content', require('./components/TaskContent.vue'));
-Vue.component('confirm-cancel-buttons', require('./components/ConfirmCancelButtons.vue'));
-Vue.component('pmmodal', require('./components/PMModal.vue'));
+Vue.component('content-frame', require('./components/Framing/ContentFrame.vue'));
+Vue.component('task-content', require('./components/Tasks/TaskContent.vue'));
+Vue.component('confirm-cancel-buttons', require('./components/Other/ConfirmCancelButtons.vue'));
+Vue.component('pmmodal', require('./components/Other/PMModal.vue'));
 
 // const files = require.context('./', true, /\.vue$/i)
 
