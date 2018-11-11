@@ -1,5 +1,5 @@
 <template>
-    <div :class=active>
+    <div :class=activeClass>
         <div class="modal-background"></div>
         <div class="modal-content">
             <div class="box">
@@ -9,7 +9,7 @@
         <button
                 class="modal-close is-large"
                 aria-label="close"
-                @click=deactivate
+                @click="$emit('deactivated')"
         ></button>
     </div>
 </template>
@@ -18,21 +18,11 @@
     export default {
         name: "pmmodal",
 
-        data: function () {
-            return {
-                isActive: true
-            }
-        },
-
-        methods: {
-            deactivate() {
-                this.isActive = false;
-            }
-        },
+        props: ['active'],
 
         computed: {
-            active() {
-                return this.isActive ? "modal is-active" : "modal";
+            activeClass() {
+                return this.active ? "modal is-active" : "modal";
             }
         }
     }

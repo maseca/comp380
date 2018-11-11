@@ -1,6 +1,5 @@
 <template>
     <div class="columns is-gapless">
-        <pmmodal></pmmodal>
         <side-nav :active-index=myIndex></side-nav>
         <div class="column">
             <section class="hero is-primary is-bold">
@@ -20,14 +19,11 @@
 </template>
 
 <script>
-    import SideNav from "./SideNav.vue"
-    import PMModal from "./PMModal.vue"
-    import Pmmodal from "./PMModal";
+    import SideNav from "./SideNav"
     export default {
         name: "content-frame",
 
         components: {
-            Pmmodal,
             SideNav
         },
 

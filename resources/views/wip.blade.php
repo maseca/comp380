@@ -10,9 +10,7 @@
 <body>
     <div id="app">
         <content-frame title="WIP" :my-index=0>
-            <div class="box">
-                <h2 class="subtitle">Content?</h2>
-            </div>
+            <task-content></task-content>
         </content-frame>
     </div>
 </body>
