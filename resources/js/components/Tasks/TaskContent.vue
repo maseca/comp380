@@ -1,35 +1,35 @@
 <template>
-        <div class="columns">
-            <pmmodal :active=modalActive
-                     @deactivated="modalActive = false">
-                <task-modal :info="modalInfo"
-                            :addEdit="addEdit"
-                            @deactivated="modalActive = false"></task-modal>
-            </pmmodal>
-            <div class="column">
-                <div class="container">
-                    <div class="box">
-                        <h2 class="subtitle">Gantt Chart Goes Here</h2>
-                    </div>
-                    <task-card v-for="card in cards"
-                               :info=card
-                               :key=card.id
-                               @edit=editModal
-                    ></task-card>
-                </div>
-            </div>
-            <div class="column">
-                <section class="section">
-                    <a class="button" @click=newModal>Create New Task</a>
-                </section>
+    <div class="columns">
+        <pmmodal :active=modalActive
+                 @deactivated="modalActive = false">
+            <task-modal :info="modalInfo"
+                        :addEdit="addEdit"
+                        @deactivated="modalActive = false"></task-modal>
+        </pmmodal>
+        <div class="column">
+            <div class="container">
                 <div class="box">
-                    <h2 class="subtitle">Search Bar Goes Here</h2>
+                    <h2 class="subtitle">Gantt Chart Goes Here</h2>
                 </div>
-                <div class="box">
-                    <h2 class="subtitle">Calendar Goes Here</h2>
-                </div>
+                <task-card v-for="card in cards"
+                           :info=card
+                           :key=card.id
+                           @edit=editModal
+                ></task-card>
             </div>
         </div>
+        <div class="column">
+            <section class="section">
+                <a class="button" @click=newModal>Create New Task</a>
+            </section>
+            <div class="box">
+                <h2 class="subtitle">Search Bar Goes Here</h2>
+            </div>
+            <div class="box">
+                <h2 class="subtitle">Calendar Goes Here</h2>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>

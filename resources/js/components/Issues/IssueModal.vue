@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="box">
         <h1 class="title">{{ addEdit }} Issue</h1>
         <div class="columns">
             <div class="column">

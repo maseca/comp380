@@ -47752,6 +47752,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -47962,7 +47964,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
+  return _c("div", { staticClass: "box" }, [
     _c("h1", { staticClass: "title" }, [_vm._v(_vm._s(_vm.addEdit) + " Task")]),
     _vm._v(" "),
     _c("div", { staticClass: "columns" }, [
@@ -48369,7 +48371,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "columns" },
     [
       _c(
         "pmmodal",
@@ -48394,35 +48395,37 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
-        _c(
-          "div",
-          { staticClass: "container" },
-          [
-            _vm._m(0),
-            _vm._v(" "),
-            _vm._l(_vm.cards, function(card) {
-              return _c("task-card", {
-                key: card.id,
-                attrs: { info: card },
-                on: { edit: _vm.editModal }
+      _c("div", { staticClass: "columns" }, [
+        _c("div", { staticClass: "column" }, [
+          _c(
+            "div",
+            { staticClass: "container" },
+            [
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._l(_vm.cards, function(card) {
+                return _c("task-card", {
+                  key: card.id,
+                  attrs: { info: card },
+                  on: { edit: _vm.editModal }
+                })
               })
-            })
-          ],
-          2
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
-        _c("section", { staticClass: "section" }, [
-          _c("a", { staticClass: "button", on: { click: _vm.newModal } }, [
-            _vm._v("Create New Task")
-          ])
+            ],
+            2
+          )
         ]),
         _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _vm._m(2)
+        _c("div", { staticClass: "column" }, [
+          _c("section", { staticClass: "section" }, [
+            _c("a", { staticClass: "button", on: { click: _vm.newModal } }, [
+              _vm._v("Create New Task")
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _vm._m(2)
+        ])
       ])
     ],
     1
@@ -48718,7 +48721,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
+  return _c("div", { staticClass: "box" }, [
     _c("h1", { staticClass: "title" }, [
       _vm._v(_vm._s(_vm.addEdit) + " Action Item")
     ]),
@@ -49351,7 +49354,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
+  return _c("div", { staticClass: "box" }, [
     _c("h1", { staticClass: "title" }, [
       _vm._v(_vm._s(_vm.addEdit) + " Deliverable")
     ]),
@@ -50017,7 +50020,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
+  return _c("div", { staticClass: "box" }, [
     _c("h1", { staticClass: "title" }, [
       _vm._v(_vm._s(_vm.addEdit) + " Issue")
     ]),
@@ -50677,8 +50680,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "pmmodal",
@@ -50703,9 +50704,7 @@ var render = function() {
   return _c("div", { class: _vm.activeClass }, [
     _c("div", { staticClass: "modal-background" }),
     _vm._v(" "),
-    _c("div", { staticClass: "modal-content" }, [
-      _c("div", { staticClass: "box" }, [_vm._t("default")], 2)
-    ]),
+    _c("div", { staticClass: "modal-content" }, [_vm._t("default")], 2),
     _vm._v(" "),
     _c("button", {
       staticClass: "modal-close is-large",
