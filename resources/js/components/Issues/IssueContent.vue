@@ -60,14 +60,14 @@
                         description: 'A cool issue', statDesc: 'A cool status'
                     },
                     {
-                        id: 1, title: 'My Issue 3', priority: 'Top Priority', severity: 'Critical',
+                        id: 1, title: 'My Issue 2', priority: 'Top Priority', severity: 'Critical',
                         raised: '2/24/2014', assigned: '2/24/2014', expEnd: '2/24/2014', actEnd: '2/24/2014',
                         actionItems: ['Action Item 1', 'Action Item 2', 'Action Item 3'],
                         decisions: ['Decision 1', 'Decision 2', 'Decision 3'], status: 'Closed',
                         description: 'A cool issue', statDesc: 'A cool status'
                     },
                     {
-                        id: 2, title: 'My Issue 2', priority: 'Top Priority', severity: 'Critical',
+                        id: 2, title: 'My Issue 3', priority: 'Top Priority', severity: 'Critical',
                         raised: '2/24/2014', assigned: '2/24/2014', expEnd: '2/24/2014', actEnd: '2/24/2014',
                         actionItems: ['Action Item 1', 'Action Item 2', 'Action Item 3'],
                         decisions: ['Decision 1', 'Decision 2', 'Decision 3'], status: 'Closed',
