@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1 class="title">{{ addEdit }} Task</h1>
+        <h1 class="title">{{ addEdit }} Issue</h1>
         <div class="columns">
             <div class="column">
                 <ul>
@@ -8,58 +8,54 @@
                         <input class="input"
                                type="text"
                                :placeholder=info.title /> </li>
-                    <li> <b>Exp. Start Date:</b>
+                    <li> <b>Severity:</b>
                         <input class="input"
                                type="text"
-                               :placeholder=info.expStart /> </li>
-                    <li> <b>Exp. End Date:</b>
+                               :placeholder=info.severity /> </li>
+                    <li> <b>Raised:</b>
+                        <input class="input"
+                               type="text"
+                               :placeholder=info.raised /> </li>
+                    <li> <b>Assigned:</b>
+                        <input class="input"
+                               type="text"
+                               :placeholder=info.assigned /> </li>
+                    <li> <b>Exp. Completion Date:</b>
                         <input class="input"
                                type="text"
                                :placeholder=info.expEnd /> </li>
-                    <li> <b>Actual Start Date:</b>
-                        <input class="input"
-                               type="text"
-                               :placeholder=info.actStart /> </li>
-                    <li> <b>Actual End Date:</b>
+                    <li> <b>Actual Completion Date:</b>
                         <input class="input"
                                type="text"
                                :placeholder=info.actEnd /> </li>
-                    <li> <b>Predecessor Tasks:</b>
-                        <input class="input"
-                               type="text"
-                               :placeholder=info.preTasks /> </li>
-                    <li> <b>Successor Tasks:</b>
-                        <input class="input"
-                               type="text"
-                               :placeholder=info.sucTasks /> </li>
                 </ul>
             </div>
             <div class="column">
                 <ul>
-                    <li> <b>Exp. Effort:</b>
+                    <li> <b>Priority:</b>
                         <input class="input"
                                type="text"
-                               :placeholder=info.expEffort /> </li>
-                    <li> <b>Completed Effort:</b>
+                               :placeholder=info.priority /> </li>
+                    <li> <b>Status:</b>
                         <input class="input"
                                type="text"
-                               :placeholder=info.comEffort /> </li>
-                    <li> <b>Actual Effort:</b>
+                               :placeholder=info.status /> </li>
+                    <li> <b>Action Items:</b>
                         <input class="input"
                                type="text"
-                               :placeholder=info.actEffort /> </li>
-                    <li> <b>Issues:</b>
+                               :placeholder=info.actionItems /> </li>
+                    <li> <b>Decisions:</b>
                         <input class="input"
                                type="text"
-                               :placeholder=info.issues /> </li>
-                    <li> <b>Resource:</b>
-                        <input class="input"
-                               type="text"
-                               :placeholder=info.resource /> </li>
+                               :placeholder=info.decisions /> </li>
                     <li> <b>Description:</b>
                         <input class="input"
                                type="text"
                                :placeholder=info.description /> </li>
+                    <li> <b>Status Description:</b>
+                        <input class="input"
+                               type="text"
+                               :placeholder=info.statDesc /> </li>
                 </ul>
                 <section class="section">
                     <confirm-cancel-buttons @deactivated="$emit('deactivated')"></confirm-cancel-buttons>
@@ -71,7 +67,7 @@
 
 <script>
     export default {
-        name: "task-modal",
+        name: "issue-modal",
 
         props: ['info', 'addEdit']
     }

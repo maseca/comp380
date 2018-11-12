@@ -3,6 +3,7 @@
             <pmmodal :active=modalActive
                      @deactivated="modalActive = false">
                 <task-modal :info="modalInfo"
+                            :addEdit="addEdit"
                             @deactivated="modalActive = false"></task-modal>
             </pmmodal>
             <div class="column">
@@ -44,6 +45,7 @@
 
         data: function () {
             return {
+                edit: false,
                 modalActive: false,
                 modalInfo: {
                     id: 0, title: 'My Task 1', resource: 'My Resource', expStart: '2/24/2014',
@@ -78,6 +80,12 @@
             }
         },
 
+        computed: {
+            addEdit() {
+                return this.edit ? "Edit" : "Create New";
+            }
+        },
+
         methods: {
             newModal() {
                 this.modalInfo = {
@@ -87,14 +95,16 @@
                     expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
                     issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
                 };
-
+                this.edit = false;
                 this.modalActive = true;
             },
 
             editModal(info) {
                 this.modalInfo = info;
+                this.edit = true;
                 this.modalActive = true;
             }
         }
+
     }
 </script>

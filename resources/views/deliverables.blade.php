@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <content-frame title="Deliverables" :my-index=2>
-
+            <deliverable-content></deliverable-content>
         </content-frame>
     </div>
 </body>

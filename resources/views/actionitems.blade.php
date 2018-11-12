@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <content-frame title="Action Items" :my-index=1>
-
+            <action-item-content></action-item-content>
         </content-frame>
     </div>
 </body>

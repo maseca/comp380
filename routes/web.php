@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('wip');
+    return redirect('/tasks');
 });
 
 Route::get('/tasks', function () {
