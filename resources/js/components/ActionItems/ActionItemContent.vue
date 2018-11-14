@@ -7,15 +7,13 @@
                                    @deactivated="modalActive = false"></action-item-modal>
             </pmmodal>
             <div class="column">
-                <div class="container">
-                    <action-item-card v-for="card in cards"
-                               :info=card
-                               :key=card.id
-                               @edit=editModal
-                    ></action-item-card>
-                </div>
+                <action-item-card v-for="card in cards"
+                           :info=card
+                           :key=card.id
+                           @edit=editModal
+                ></action-item-card>
             </div>
-            <div class="column">
+            <div class="column is-narrow">
                 <section class="section">
                     <a class="button" @click=newModal>Create New Action Item</a>
                 </section>

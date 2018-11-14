@@ -47750,8 +47750,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 
 
@@ -48234,7 +48232,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return !_vm.hidden
-    ? _c("div", { staticClass: "container" }, [
+    ? _c("div", [
         _c("div", { staticClass: "card" }, [
           _c("header", { staticClass: "card-header" }, [
             _c("p", { staticClass: "card-header-title" }, [
@@ -48394,26 +48392,24 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
-        _c(
-          "div",
-          { staticClass: "container" },
-          [
-            _vm._m(0),
-            _vm._v(" "),
-            _vm._l(_vm.cards, function(card) {
-              return _c("task-card", {
-                key: card.id,
-                attrs: { info: card },
-                on: { edit: _vm.editModal }
-              })
+      _c(
+        "div",
+        { staticClass: "column" },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _vm._l(_vm.cards, function(card) {
+            return _c("task-card", {
+              key: card.id,
+              attrs: { info: card },
+              on: { edit: _vm.editModal }
             })
-          ],
-          2
-        )
-      ]),
+          })
+        ],
+        2
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
+      _c("div", { staticClass: "column is-narrow" }, [
         _c("section", { staticClass: "section" }, [
           _c("a", { staticClass: "button", on: { click: _vm.newModal } }, [
             _vm._v("Create New Task")
@@ -48520,8 +48516,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ActionItemModal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__ActionItemModal__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ActionItemCard__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ActionItemCard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ActionItemCard__);
-//
-//
 //
 //
 //
@@ -48914,7 +48908,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return !_vm.hidden
-    ? _c("div", { staticClass: "container" }, [
+    ? _c("div", [
         _c("div", { staticClass: "card" }, [
           _c("header", { staticClass: "card-header" }, [
             _c("p", { staticClass: "card-header-title" }, [
@@ -49035,21 +49029,19 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
-        _c(
-          "div",
-          { staticClass: "container" },
-          _vm._l(_vm.cards, function(card) {
-            return _c("action-item-card", {
-              key: card.id,
-              attrs: { info: card },
-              on: { edit: _vm.editModal }
-            })
+      _c(
+        "div",
+        { staticClass: "column" },
+        _vm._l(_vm.cards, function(card) {
+          return _c("action-item-card", {
+            key: card.id,
+            attrs: { info: card },
+            on: { edit: _vm.editModal }
           })
-        )
-      ]),
+        })
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
+      _c("div", { staticClass: "column is-narrow" }, [
         _c("section", { staticClass: "section" }, [
           _c("a", { staticClass: "button", on: { click: _vm.newModal } }, [
             _vm._v("Create New Action Item")
@@ -49148,8 +49140,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__DeliverableModal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__DeliverableModal__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__DeliverableCard__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__DeliverableCard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__DeliverableCard__);
-//
-//
 //
 //
 //
@@ -49547,7 +49537,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return !_vm.hidden
-    ? _c("div", { staticClass: "container" }, [
+    ? _c("div", [
         _c("div", { staticClass: "card" }, [
           _c("header", { staticClass: "card-header" }, [
             _c("p", { staticClass: "card-header-title" }, [
@@ -49668,21 +49658,19 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
-        _c(
-          "div",
-          { staticClass: "container" },
-          _vm._l(_vm.cards, function(card) {
-            return _c("deliverable-card", {
-              key: card.id,
-              attrs: { info: card },
-              on: { edit: _vm.editModal }
-            })
+      _c(
+        "div",
+        { staticClass: "column" },
+        _vm._l(_vm.cards, function(card) {
+          return _c("deliverable-card", {
+            key: card.id,
+            attrs: { info: card },
+            on: { edit: _vm.editModal }
           })
-        )
-      ]),
+        })
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
+      _c("div", { staticClass: "column is-narrow" }, [
         _c("section", { staticClass: "section" }, [
           _c("a", { staticClass: "button", on: { click: _vm.newModal } }, [
             _vm._v("Create New Deliverable")
@@ -49810,8 +49798,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 
 
@@ -49841,13 +49827,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 decisions: ['Decision 1', 'Decision 2', 'Decision 3'], status: 'Closed',
                 description: 'A cool issue', statDesc: 'A cool status'
             }, {
-                id: 1, title: 'My Issue 3', priority: 'Top Priority', severity: 'Critical',
+                id: 1, title: 'My Issue 2', priority: 'Top Priority', severity: 'Critical',
                 raised: '2/24/2014', assigned: '2/24/2014', expEnd: '2/24/2014', actEnd: '2/24/2014',
                 actionItems: ['Action Item 1', 'Action Item 2', 'Action Item 3'],
                 decisions: ['Decision 1', 'Decision 2', 'Decision 3'], status: 'Closed',
                 description: 'A cool issue', statDesc: 'A cool status'
             }, {
-                id: 2, title: 'My Issue 2', priority: 'Top Priority', severity: 'Critical',
+                id: 2, title: 'My Issue 3', priority: 'Top Priority', severity: 'Critical',
                 raised: '2/24/2014', assigned: '2/24/2014', expEnd: '2/24/2014', actEnd: '2/24/2014',
                 actionItems: ['Action Item 1', 'Action Item 2', 'Action Item 3'],
                 decisions: ['Decision 1', 'Decision 2', 'Decision 3'], status: 'Closed',
@@ -50281,7 +50267,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return !_vm.hidden
-    ? _c("div", { staticClass: "container" }, [
+    ? _c("div", [
         _c("div", { staticClass: "card" }, [
           _c("header", { staticClass: "card-header" }, [
             _c("p", { staticClass: "card-header-title" }, [
@@ -50436,21 +50422,19 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
-        _c(
-          "div",
-          { staticClass: "container" },
-          _vm._l(_vm.cards, function(card) {
-            return _c("issue-card", {
-              key: card.id,
-              attrs: { info: card },
-              on: { edit: _vm.editModal }
-            })
+      _c(
+        "div",
+        { staticClass: "column" },
+        _vm._l(_vm.cards, function(card) {
+          return _c("issue-card", {
+            key: card.id,
+            attrs: { info: card },
+            on: { edit: _vm.editModal }
           })
-        )
-      ]),
+        })
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
+      _c("div", { staticClass: "column is-narrow" }, [
         _c("section", { staticClass: "section" }, [
           _c("a", { staticClass: "button", on: { click: _vm.newModal } }, [
             _vm._v("Create New Issue")

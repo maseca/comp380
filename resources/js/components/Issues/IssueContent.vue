@@ -7,15 +7,13 @@
                              @deactivated="modalActive = false"></issue-modal>
             </pmmodal>
             <div class="column">
-                <div class="container">
-                    <issue-card v-for="card in cards"
-                               :info=card
-                               :key=card.id
-                               @edit=editModal
-                    ></issue-card>
-                </div>
+                <issue-card v-for="card in cards"
+                           :info=card
+                           :key=card.id
+                           @edit=editModal
+                ></issue-card>
             </div>
-            <div class="column">
+            <div class="column is-narrow">
                 <section class="section">
                     <a class="button" @click=newModal>Create New Issue</a>
                 </section>

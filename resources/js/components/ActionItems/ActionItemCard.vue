@@ -1,5 +1,5 @@
 <template>
-    <div v-if="!hidden" class="container">
+    <div v-if="!hidden">
         <div class="card">
             <header class="card-header">
                 <p class="card-header-title">

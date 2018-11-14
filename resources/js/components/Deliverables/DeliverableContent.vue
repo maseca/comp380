@@ -7,15 +7,13 @@
                                    @deactivated="modalActive = false"></deliverable-modal>
             </pmmodal>
             <div class="column">
-                <div class="container">
-                    <deliverable-card v-for="card in cards"
-                               :info=card
-                               :key=card.id
-                               @edit=editModal
-                    ></deliverable-card>
-                </div>
+                <deliverable-card v-for="card in cards"
+                           :info=card
+                           :key=card.id
+                           @edit=editModal
+                ></deliverable-card>
             </div>
-            <div class="column">
+            <div class="column is-narrow">
                 <section class="section">
                     <a class="button" @click=newModal>Create New Deliverable</a>
                 </section>
