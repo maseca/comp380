@@ -15,6 +15,7 @@
                             <li> <b>Assigned:</b> {{ info.assigned }} </li>
                             <li> <b>Action Items:</b> {{ info.actionItems }} </li>
                             <li> <b>Description:</b> {{ info.description }} </li>
+                            <li> <b>Status:</b> {{ info.status }} </li>
                         </ul>
                     </div>
                     <div class="column">
@@ -24,7 +25,6 @@
                             <li> <b>Actual Completion Date:</b> {{ info.actEnd }} </li>
                             <li> <b>Decisions:</b> {{ info.decisions }} </li>
                             <li> <b>Status Description:</b> {{ info.statDesc }} </li>
-                            <li> <b>Status:</b> {{ info.status }} </li>
                         </ul>
                     </div>
                 </div>

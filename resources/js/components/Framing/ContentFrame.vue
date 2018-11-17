@@ -12,6 +12,9 @@
                 </div>
             </section>
             <section class="section has-background-light">
+                <div class="box">
+                    Sorting Options Go Here
+                </div>
                 <slot></slot>
             </section>
         </div>

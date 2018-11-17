@@ -29,6 +29,7 @@
                     { id: 1, link: "/actionitems", text: "Action Items"},
                     { id: 2, link: "/deliverables", text: "Deliverables"},
                     { id: 3, link: "/issues", text: "Issues"},
+                    { id: 4, link: "/resources", text: "Resources"},
                 ]
             }
         },

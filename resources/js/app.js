@@ -23,6 +23,7 @@ Vue.component('task-content', require('./components/Tasks/TaskContent.vue'));
 Vue.component('action-item-content', require('./components/ActionItems/ActionItemContent.vue'));
 Vue.component('deliverable-content', require('./components/Deliverables/DeliverableContent.vue'));
 Vue.component('issue-content', require('./components/Issues/IssueContent.vue'));
+Vue.component('resource-content', require('./components/Resources/ResourceContent.vue'));
 
 Vue.component('confirm-cancel-buttons', require('./components/Other/ConfirmCancelButtons.vue'));
 Vue.component('pmmodal', require('./components/Other/PMModal.vue'));

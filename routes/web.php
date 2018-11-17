@@ -30,3 +30,7 @@ Route::get('/deliverables', function () {
 Route::get('/issues', function () {
     return view('issues');
 });
+
+Route::get('/resources', function () {
+    return view('resources');
+});
