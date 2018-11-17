@@ -44,20 +44,24 @@
                 modalActive: false,
                 modalInfo: {
                     id: 0, title: 'Developer', name: 'John Doe',
-                    skills: 'Fast Talker', payRate: '$15/hr'
+                    skills: 'Fast Talker', payRate: '$15/hr',
+                    availability: 'Jan. 2017 - Jan. 2019'
                 },
                 cards: [
                     {
                         id: 0, title: 'Developer', name: 'John Doe',
-                        skills: 'Fast Talker', payRate: '$15/hr'
+                        skills: 'Fast Talker', payRate: '$15/hr',
+                        availability: 'Jan. 2017 - Jan. 2019'
                     },
                     {
                         id: 1, title: 'Developer', name: 'John Doe',
-                        skills: 'Fast Talker', payRate: '$15/hr'
+                        skills: 'Fast Talker', payRate: '$15/hr',
+                        availability: 'Jan. 2017 - Jan. 2019'
                     },
                     {
                         id: 2, title: 'Developer', name: 'John Doe',
-                        skills: 'Fast Talker', payRate: '$15/hr'
+                        skills: 'Fast Talker', payRate: '$15/hr',
+                        availability: 'Jan. 2017 - Jan. 2019'
                     }
                 ]
             }

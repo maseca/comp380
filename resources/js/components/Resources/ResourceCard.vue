@@ -13,6 +13,7 @@
                             <li> <b>Title:</b> {{ info.title }} </li>
                             <li> <b>Skills:</b> {{ info.skills }} </li>
                             <li> <b>Pay Rate:</b> {{ info.payRate }} </li>
+                            <li> <b>Availability:</b> {{ info.availability }} </li>
                         </ul>
                     </div>
                 </div>

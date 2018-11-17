@@ -50589,17 +50589,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             modalActive: false,
             modalInfo: {
                 id: 0, title: 'Developer', name: 'John Doe',
-                skills: 'Fast Talker', payRate: '$15/hr'
+                skills: 'Fast Talker', payRate: '$15/hr',
+                availability: 'Jan. 2017 - Jan. 2019'
             },
             cards: [{
                 id: 0, title: 'Developer', name: 'John Doe',
-                skills: 'Fast Talker', payRate: '$15/hr'
+                skills: 'Fast Talker', payRate: '$15/hr',
+                availability: 'Jan. 2017 - Jan. 2019'
             }, {
                 id: 1, title: 'Developer', name: 'John Doe',
-                skills: 'Fast Talker', payRate: '$15/hr'
+                skills: 'Fast Talker', payRate: '$15/hr',
+                availability: 'Jan. 2017 - Jan. 2019'
             }, {
                 id: 2, title: 'Developer', name: 'John Doe',
-                skills: 'Fast Talker', payRate: '$15/hr'
+                skills: 'Fast Talker', payRate: '$15/hr',
+                availability: 'Jan. 2017 - Jan. 2019'
             }]
         };
     },
@@ -50711,6 +50715,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "resource-modal",
@@ -50767,6 +50775,15 @@ var render = function() {
             _c("input", {
               staticClass: "input",
               attrs: { type: "text", placeholder: _vm.info.payRate }
+            })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("b", [_vm._v("Availability:")]),
+            _vm._v(" "),
+            _c("input", {
+              staticClass: "input",
+              attrs: { type: "text", placeholder: _vm.info.availability }
             })
           ])
         ]),
@@ -50880,6 +50897,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "resource-card",
@@ -50929,6 +50947,11 @@ var render = function() {
                   _c("li", [
                     _c("b", [_vm._v("Pay Rate:")]),
                     _vm._v(" " + _vm._s(_vm.info.payRate) + " ")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("b", [_vm._v("Availability:")]),
+                    _vm._v(" " + _vm._s(_vm.info.availability) + " ")
                   ])
                 ])
               ])

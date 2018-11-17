@@ -20,6 +20,10 @@
                         <input class="input"
                                type="text"
                                :placeholder=info.payRate /> </li>
+                    <li> <b>Availability:</b>
+                        <input class="input"
+                               type="text"
+                               :placeholder=info.availability /> </li>
                 </ul>
                 <section class="section">
                     <confirm-cancel-buttons @deactivated="$emit('deactivated')"></confirm-cancel-buttons>
