@@ -48,31 +48,31 @@
                 modalInfo: {
                     id: 0, title: 'My Task 1', resource: 'My Resource', expStart: '2/24/2014',
                     expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
-                    preTasks: ['Task 1', 'Task 2', 'Task 3'], sucTasks: ['Task 1', 'Task 2', 'Task 3'],
+                    preTasks: [], sucTasks: ['Task 2', 'Task 3'],
                     expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
-                    issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
+                    issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task', summary: true
                 },
                 cards: [
                     {
                         id: 0, title: 'My Task 1', resource: 'My Resource', expStart: '2/24/2014',
                         expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
-                        preTasks: ['Task 1', 'Task 2', 'Task 3'], sucTasks: ['Task 1', 'Task 2', 'Task 3'],
+                        preTasks: [], sucTasks: ['Task 2', 'Task 3'],
                         expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
-                        issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
+                        issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task', summary: true
                     },
                     {
                         id: 1, title: 'My Task 2', resource: 'My Resource', expStart: '2/24/2014',
                         expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
-                        preTasks: ['Task 1', 'Task 2', 'Task 3'], sucTasks: ['Task 1', 'Task 2', 'Task 3'],
+                        preTasks: ['Task 1'], sucTasks: ['Task 3'],
                         expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
-                        issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
+                        issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task', summary: true
                     },
                     {
                         id: 2, title: 'My Task 3', resource: 'My Resource', expStart: '2/24/2014',
                         expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
-                        preTasks: ['Task 1', 'Task 2', 'Task 3'], sucTasks: ['Task 1', 'Task 2', 'Task 3'],
+                        preTasks: ['Task 1', 'Task 2'], sucTasks: [],
                         expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
-                        issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
+                        issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task', summary: true
                     }
                 ]
             }

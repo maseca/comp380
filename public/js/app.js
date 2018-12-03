@@ -48052,28 +48052,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             modalInfo: {
                 id: 0, title: 'My Task 1', resource: 'My Resource', expStart: '2/24/2014',
                 expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
-                preTasks: ['Task 1', 'Task 2', 'Task 3'], sucTasks: ['Task 1', 'Task 2', 'Task 3'],
+                preTasks: [], sucTasks: ['Task 2', 'Task 3'],
                 expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
-                issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
+                issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task', summary: true
             },
             cards: [{
                 id: 0, title: 'My Task 1', resource: 'My Resource', expStart: '2/24/2014',
                 expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
-                preTasks: ['Task 1', 'Task 2', 'Task 3'], sucTasks: ['Task 1', 'Task 2', 'Task 3'],
+                preTasks: [], sucTasks: ['Task 2', 'Task 3'],
                 expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
-                issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
+                issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task', summary: true
             }, {
                 id: 1, title: 'My Task 2', resource: 'My Resource', expStart: '2/24/2014',
                 expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
-                preTasks: ['Task 1', 'Task 2', 'Task 3'], sucTasks: ['Task 1', 'Task 2', 'Task 3'],
+                preTasks: ['Task 1'], sucTasks: ['Task 3'],
                 expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
-                issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
+                issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task', summary: true
             }, {
                 id: 2, title: 'My Task 3', resource: 'My Resource', expStart: '2/24/2014',
                 expEnd: '2/24/2014', actStart: '2/24/2014', actEnd: '2/24/2014',
-                preTasks: ['Task 1', 'Task 2', 'Task 3'], sucTasks: ['Task 1', 'Task 2', 'Task 3'],
+                preTasks: ['Task 1', 'Task 2'], sucTasks: [],
                 expEffort: 'A little', comEffort: 'Some', actEffort: 'A lot',
-                issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task'
+                issues: ['Issue 1', 'Issue 2', 'Issue 3'], description: 'A cool task', summary: true
             }]
         };
     },
@@ -48158,6 +48158,8 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
 //
 //
 //
@@ -48369,7 +48371,9 @@ var render = function() {
               staticClass: "input",
               attrs: { type: "text", placeholder: _vm.info.description }
             })
-          ])
+          ]),
+          _vm._v(" "),
+          _vm._m(0)
         ]),
         _vm._v(" "),
         _c(
@@ -48390,7 +48394,18 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("b", [_vm._v("Summary Task:")]),
+      _vm._v(" "),
+      _c("input", { attrs: { type: "checkbox" } })
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -48453,6 +48468,7 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -48592,6 +48608,11 @@ var render = function() {
                   _c("li", [
                     _c("b", [_vm._v("Description:")]),
                     _vm._v(" " + _vm._s(_vm.info.description) + " ")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("b", [_vm._v("Summary Task:")]),
+                    _vm._v(" " + _vm._s(_vm.info.summary ? "Yes" : "No") + " ")
                   ])
                 ])
               ])

@@ -26,6 +26,7 @@
                             <li> <b>Issues:</b> {{ info.issues }} </li>
                             <li> <b>Resource:</b> {{ info.resource }} </li>
                             <li> <b>Description:</b> {{ info.description }} </li>
+                            <li> <b>Summary Task:</b> {{ info.summary ? "Yes" : "No" }} </li>
                         </ul>
                     </div>
                 </div>
@@ -49,6 +50,6 @@
             return {
                 hidden: false
             }
-        }
+        },
     }
 </script>

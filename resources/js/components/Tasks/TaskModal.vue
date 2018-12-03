@@ -60,6 +60,8 @@
                         <input class="input"
                                type="text"
                                :placeholder=info.description /> </li>
+                    <li> <b>Summary Task:</b>
+                        <input type="checkbox"/> </li>
                 </ul>
                 <section class="section">
                     <confirm-cancel-buttons @deactivated="$emit('deactivated')"></confirm-cancel-buttons>
