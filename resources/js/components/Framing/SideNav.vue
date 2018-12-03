@@ -7,17 +7,24 @@
                     :key=item.id
                     :activeIndex=activeIndex
             ></nav-item>
+            <li><a @click="activateHelp"><i>Help</i></a></li>
         </ul>
+        <pmmodal :active="helpActive"
+                 @deactivated="helpActive = false">
+            <help-modal ></help-modal>
+        </pmmodal>
     </div>
 </template>
 
 <script>
     import NavItem from './NavItem.vue'
+    import HelpModal from './HelpModal.vue'
     export default {
         name: "side-nav",
 
         components: {
-            NavItem
+            NavItem,
+            HelpModal
         },
 
         props: ['activeIndex'],
@@ -30,8 +37,16 @@
                     { id: 2, link: "/deliverables", text: "Deliverables"},
                     { id: 3, link: "/issues", text: "Issues"},
                     { id: 4, link: "/resources", text: "Resources"},
-                ]
+                ],
+
+                helpActive: false
             }
         },
+
+        methods: {
+            activateHelp() {
+                this.helpActive = true;
+            }
+        }
     }
 </script>
